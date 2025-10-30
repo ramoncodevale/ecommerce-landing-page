@@ -36,6 +36,8 @@
 header {
     background-color: var(--white);
     width: 100%;
+    display: flex;
+    align-items: center;
     height: 100px;
 }
 
@@ -43,7 +45,6 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 38px;
 }
 
 .logo {
@@ -58,14 +59,14 @@ header .container {
     color: var(--black);
 }
 
-ul {
+header ul {
     display: flex;
     align-items: center;
     gap: 75px;
     list-style: none;
 }
 
-a {
+header a {
     color: var(--black);
     font-weight: 500;
     text-decoration: none;
@@ -78,18 +79,67 @@ a {
 }
 
 
-
 .home {
     background-color: var(--background-home);
     background-image: url('../assets/scandinavian-background.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
     background-position: center;
-    display: flex;
-    align-items: center;
+    padding-top: 153px;
+    padding-bottom: 117px;
 }
 
-.home-container {
+
+.home .container {
     display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--background-home);
+    max-width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 62px 49px 37px 33px;
+}
+
+.container-card-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-card-text h3 {
+    color: var(--font-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container-card-text h1 {
+    color: var(--primary);
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 65px;
+}
+
+.container-card-text p {
+    width: 100%;
+    max-width: 546px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 17px;
+    color: var(--font-color);
+}
+
+.container-card-text button {
+    width: 222px;
+    height: 74px;
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    margin-top: 46px;
 }
