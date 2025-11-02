@@ -11,6 +11,10 @@
     --black: #000000;
     --white: #FFFFFF;
     --primary: #B88E2F;
+    --gray: #3A3A3A;
+    --gray-1: #F4F5F7;
+    --gray-2: #898989;
+    --gray-3: #B0B0B0;
     --background-home: #FFF3E3;
     --font-color: #333333;
     --font-color-1: #666666;
@@ -146,7 +150,6 @@ header a {
 
 .range {
     padding-top: 56px;
-    padding-bottom: 62px;
 }
 
 .container-range {
@@ -185,5 +188,85 @@ header a {
     font-weight: 600;
     font-size: 24px;
     color: var(--font-color);
-    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.our-products h3 {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--gray);
+    text-align: center;
+}
+
+.container-flex-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.container-our-products {
+    padding-top: 32px;
+}
+
+.container-our-products img {
+    display: block;
+}
+
+.card-our-products {
+    background-color: var(--gray-1);
+    width: 285px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 16px;
+}
+
+.card-our-products h4 {
+    color: var(--gray);
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 16px;
+}
+
+.card-our-products p {
+    color: var(--gray-2);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container-numbers {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.container-numbers p {
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.container-numbers .price {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray-3);
+}
+
+.container-button-show {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+.container-button-show button {
+    width: 245px;
+    height: 45px;
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
 }
