@@ -210,6 +210,11 @@ header a {
     padding-top: 32px;
 }
 
+.container-img-button {
+    display: flex;
+    align-items: center;
+}
+
 .container-our-products img {
     display: block;
 }
@@ -312,7 +317,7 @@ header a {
 
 .container-img-featured {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
     gap: 42px;
     padding-top: 44px;
@@ -334,4 +339,39 @@ header a {
     align-items: center;
     gap: 20px;
     margin-top: 48px;
+}
+
+.share {
+    padding-top: 67px;
+}
+
+.container-share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container-share h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--font-color-1);
+}
+
+.container-share h1 {
+    color: var(--font-color);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.container-imgs-share {
+    padding-top: 44px;
+}
+
+.container-imgs-share img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
