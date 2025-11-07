@@ -15,6 +15,7 @@
     --gray-1: #F4F5F7;
     --gray-2: #898989;
     --gray-3: #B0B0B0;
+    --gray-4: #9F9F9F;
     --background-home: #FFF3E3;
     --background-featured-products: #FCF8F3;
     --font-color: #333333;
@@ -374,4 +375,104 @@ header a {
     height: auto;
     display: block;
     object-fit: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #D9D9D9;
+    margin-top: 50px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 48px;
+}
+
+
+.container-name-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-name-description p {
+    font-weight: 700;
+    color: var(--black);
+    font-size: 24px;
+}
+
+.container-name-description .description {
+    color: var(--gray-4);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.container-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-list-links p {
+    color: var(--gray-4);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container-list-links ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 46px;
+    margin-top: 55px;
+}
+
+.container-list-links a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.container-newsletter p {
+    color: var(--gray-4);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.container-email input {
+    color: var(--gray-4);
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid var(--black);
+
+}
+
+.container-email {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-top: 53px;
+}
+
+.container-email .subscribe {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
+}
+
+.border {
+    border: 1px solid #D9D9D9;
+    margin-top: 48px;
+}
+
+.copyright {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 35px;
 }
